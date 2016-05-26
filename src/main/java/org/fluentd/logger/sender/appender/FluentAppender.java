@@ -1,6 +1,5 @@
 package org.fluentd.logger.sender.appender;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -48,11 +47,7 @@ public class FluentAppender extends AppenderSkeleton {
 
 	@Override
 	public void close() {
-		try {
-			fluentLogger.flush();
-		} catch (final IOException e) {
-			e.printStackTrace();
-		}
+		fluentLogger.flush();
 	}
 
 	@Override
