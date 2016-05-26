@@ -67,7 +67,7 @@ public class FluentAppender extends AppenderSkeleton {
 		messages.put("loggerName", event.getLoggerName());
 		messages.put("thread", event.getThreadName());
 		messages.put("message", event.getMessage().toString());
-		fluentLogger.log(label, messages, event.getTimeStamp());
+		fluentLogger.log(label, messages, event.getTimeStamp() / 1000);
 	}
 
 }
