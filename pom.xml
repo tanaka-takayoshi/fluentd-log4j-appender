@@ -30,7 +30,7 @@
 		</repository>
 	</repositories>
 	<build>
-		<finalName>fluentd-logback-appender</finalName>
+		<finalName>fluentd-log4j-appender</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
