@@ -42,7 +42,7 @@ public class FluentAppender extends AppenderSkeleton {
 		try {
 			fluentLogger = FluentLogger.getLogger(tag, host, port);
 		} catch (final RuntimeException e) {
-			// addError("Cannot create FluentLogger.", e);
+			e.printStackTrace(); // It's not possible to log, how to do better ? ...
 		}
 		super.activateOptions();
 	}
